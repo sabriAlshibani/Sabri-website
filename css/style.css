@@ -36,7 +36,6 @@ body {
 /*  start header */
 .header {
   width: 100%;
-  position: relative;
 }
 /* start nav */
 .nav {
@@ -192,13 +191,16 @@ header .banner .container {
     border: none;
     text-align: center;
   }
+  .header .banner .img {
+    width: 100%;
+  }
   .header .banner img {
     width: 360px;
     height: 360px;
     border-radius: 50%;
   }
 }
-.banner img {
+.banner .img img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -229,10 +231,11 @@ header .banner .container {
 }
 @media (max-width: 767px) {
   .buttons {
+    width: 100%;
     align-items: center;
   }
   .buttons a {
-    max-width: 100%;
+    width: 100%;
   }
 }
 .buttons a {
@@ -282,14 +285,19 @@ header .banner .container {
   color: var(--text-color);
   margin-left: 20px;
 }
+@media (max-width: 767px) {
+  .skills .container h2 {
+    justify-content: center;
+  }
+}
 .skills .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 .cards .card {
-  width: 30%;
+  width: 100%;
   padding: 20px;
   background-color: var(--secondary-color);
   text-align: center;
@@ -298,11 +306,19 @@ header .banner .container {
   border: 1px solid transparent;
   transition: 0.5s;
 }
+@media (min-width: 768px) {
+  .cards .card {
+    width: 30%;
+  }
+}
 .cards .card:hover {
   border-color: var(--describe-color);
 }
 .cards .card i {
   font-size: 60px;
+}
+.cards .card h3 {
+  font-size: 24px;
 }
 /* end skills */
 @media (max-width: 767px) {
