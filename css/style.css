@@ -36,7 +36,6 @@ body {
 /*  start header */
 .header {
   width: 100%;
-  height: 100vh;
   position: relative;
 }
 /* start nav */
@@ -143,6 +142,7 @@ nav .container .menu {
 /* start banner */
 header .banner {
   margin-top: 140px;
+  margin-bottom: 140px;
 }
 header .banner .container {
   display: flex;
@@ -280,6 +280,7 @@ header .banner .container {
   gap: 20px;
   text-transform: uppercase;
   color: var(--text-color);
+  margin-left: 20px;
 }
 .skills .cards {
   display: flex;
