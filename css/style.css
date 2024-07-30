@@ -38,7 +38,6 @@ body {
   width: 100%;
   height: 100vh;
   position: relative;
-  
 }
 /* start nav */
 .nav {
@@ -123,37 +122,27 @@ nav .container .menu {
     left: 0;
     top: 100%;
     background-color: var(--secondary-color);
-   }
-   .links-appear li {
+  }
+  .links-appear li {
     width: 100%;
     border-bottom: 1px solid var(--border-color);
-   }
-   .links-appear li:last-child {
+  }
+  .links-appear li:last-child {
     border-bottom: none;
-   }
-   .links-appear a {
+  }
+  .links-appear a {
     color: var(--text-color);
     padding: 10px;
     display: block;
     text-align: center;
-
-   }
+  }
 }
- 
+
 /* end nav */
 
 /* start banner */
 header .banner {
-  position: absolute;
-  top: 70%;
-  left: 0;
-  right: 0;
-  transform: translateY(-70%);
-}
-@media (max-width: 767px) {
-  header .banner {
-    top: 90%;
-  }
+  margin-top: 140px;
 }
 header .banner .container {
   display: flex;
@@ -170,9 +159,28 @@ header .banner .container {
   }
   .banner .img {
     width: 25%;
-  height: 400px;
+    height: 400px;
   }
-} 
+}
+.banner .img {
+  clip-path: polygon(
+    84% 2%,
+    100% 18%,
+    95% 35%,
+    100% 55%,
+    88% 62%,
+    96% 77%,
+    78% 86%,
+    46% 85%,
+    23% 95%,
+    14% 74%,
+    10% 55%,
+    7% 29%,
+    5% 11%,
+    18% 1%,
+    35% 0%
+  );
+}
 .banner .summary {
   padding: 30px;
   border-radius: 20px;
@@ -184,12 +192,12 @@ header .banner .container {
     border: none;
     text-align: center;
   }
-   .header .banner img {
+  .header .banner img {
     width: 360px;
     height: 360px;
     border-radius: 50%;
   }
-} 
+}
 .banner img {
   width: 100%;
   height: 100%;
@@ -225,7 +233,6 @@ header .banner .container {
   }
   .buttons a {
     max-width: 100%;
-
   }
 }
 .buttons a {
@@ -252,7 +259,7 @@ header .banner .container {
 }
 .buttons a:hover {
   width: 160px;
-  background-color:var(--text-color) ;
+  background-color: var(--text-color);
   color: var(--primary-color);
 }
 .buttons a i {
@@ -265,7 +272,6 @@ header .banner .container {
 .skills {
   padding-top: 60px;
   padding-bottom: 60px;
-
 }
 .skills .container h2 {
   font-size: 30px;
@@ -289,14 +295,13 @@ header .banner .container {
   color: var(--text-color);
   border-radius: 10px;
   border: 1px solid transparent;
-  transition: .5s;
+  transition: 0.5s;
 }
 .cards .card:hover {
   border-color: var(--describe-color);
 }
 .cards .card i {
   font-size: 60px;
-
 }
 /* end skills */
 @media (max-width: 767px) {
